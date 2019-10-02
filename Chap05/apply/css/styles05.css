@@ -1,4 +1,4 @@
-/* Style sheet created by: Student's First Name Student's Last Name, Today's Date */
+/* Style sheet created by: Brendan McCourt, October 2, 2019 */
 
 /* Style for body specifies a background color */
 body {
@@ -7,6 +7,7 @@ body {
 
 /* Style to create a fluid image */
 img {
+	max-width: 100%;
 	box-shadow: .5em .5em .5em #404040;
 	margin: 1%;
 	text-align: center;
@@ -14,7 +15,7 @@ img {
 
 /* Style for the container centers the page and specifies the width */
 #container {
-	width: 800px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
