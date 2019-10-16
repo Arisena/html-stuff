@@ -1,8 +1,13 @@
-/* Style sheet created by: Brendan McCourt, October 2, 2019 */
+
 
 /* Style for body specifies a background color */
 body {
 	background-color: #FFFFFF;
+}
+
+/* Style to create a fluid image */
+img {
+	max-width: 100%;
 }
 
 /* Styles for Mobile Layout */
@@ -34,13 +39,13 @@ nav {
 
 /* Style specifies padding and margins for unordered list */
 nav ul {
-padding: 0;
-margin-top: 0.5em;
-margin-bottom: 0.5em;
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 /* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
-nav li {
+nav li{
 	background-color: #FF6600;
 	border-radius: 1em;
 	list-style-type: none;
@@ -48,10 +53,15 @@ nav li {
 	padding: 0.4em;
 }
 
-/* Style changes navigation link text color to white and removes the underline */
+/* style changes navigatio nlink text color to white and removesthe underline */
 nav li a {
 	color: #FFFFFF;
 	text-decoration: none;
+}
+
+/* style displays the mobile class */
+.mobile {
+	display: inline;
 }
 
 /* Style for the main specifies a block display, text properties, margins, padding, rounded corners, and borders  */
@@ -72,12 +82,90 @@ footer {
 	margin-top: 2em;
 }
 
-/* Style to create a fluid image */
-img {
-	max-width: 100%;
+@media only screen and(min-width: 481px) {
+	img {
+		width: 25%;
+		float: left;
+	}
+	
+	header p {
+		margin-bottom: 4em;
+		padding-top: 1.5em;
+	}
+	
+	nav li {
+		display: inline;
+		float: left;
+		margin-left: 1%;
+		margin-right: 1%;
+		padding-left: 0;
+		padding-right: 0;
+		width: 23%;
+	}
+	
+	main {
+		clear: left;
+		margin-top: 12em;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	
+	.desktop {
+		display: inline;
+	}
 }
 
-/* Style displays the mobile class */
-.mobile {
-	display: inline;
+@media only screen and(min-width: 769px) {
+#container {
+width: 80%
+}	
+
+nav {
+	margin-top: -5em;
+}
+
+nav ul {
+	margin: 0;
+	padding-left: 0.50%;
+	padding-right: 0.50%;
+}
+
+nav li {
+	background-color: #FFFFFF;
+	border-radius: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	width: 18%;
+}
+
+nav li a {
+	color: #FF6600;
+	display: inline-block;
+	padding: 0.7em;
+	font-size: 1.25em;
+}
+
+nav li a:link {
+	color #FF6600;
+}
+
+nav li a:hover {
+	color: #FF6600;
+	font-style: italic;
+}
+
+main {
+	border: none;
+	border-radius: 1em;
+	box-shadow: 1em 1em 1em #331400;
+	margin-top: 1em;
+}
+
+}	
+
+.desktop {
+	display: none;
 }
