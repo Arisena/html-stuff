@@ -184,22 +184,22 @@ main {
 }
 
 section {
-	float: left;
-	width: 60%;
+	background-color: #FF6600;
 }
-
 article {
 	background-color: #FFFFFF;
 	border-top: 0;
 	border-radius: 0 3em 3em 3em;
 	margin-bottom: 1em;
 }
+aside {
+	text-align: center;
+	color: #FF6600;
+	background-color: #FFFFFF;
+	box-shadow: 1em 1em 1em #000000;
+	border-radius: 8em;
+}
 
-aside{
-	float: right;
-	width: 25%;
-	background-color: #FF6600;
-	colro: #FFFFFF;
 }
 
 }	
@@ -207,25 +207,4 @@ aside{
 div p {
 	padding-left: 1em;
 	padding-right: 1em;
-}
-
-section {
-	padding: 1%;
-	text-align: center;
-}
-
-article {
-	border-top: solid 0.2em #FF6600;
-	padding: 2%;
-	margin: 0.5%;
-	text-align: left;
-}
-
-aside {
-	text-align: center;
-	color: #FFFFFF;
-	background-color: #FF6600;
-	font-size: 1.25em;
-	margin: 1em;
-	padding: 1em;
 }
