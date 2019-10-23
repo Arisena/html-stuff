@@ -116,6 +116,27 @@ aside {
 	font-style: italic;
 }
 
+/*style rule for input, select, and textarea form elements*/
+input, select, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
+/*style rule for label element*/
+label {
+	display: block;
+}
+
+/*style rule for unordered list within a form*/
+form ul {
+	list-style-type: none;
+}
+
+/*style rule for ckbx class*/
+.chkbx {
+	display: inline-block;
+}
+
 /* Media query for tablet layout targets screen size with a minimum width of 660px.  */ 
 
 @media only screen and (min-width: 660px) {
@@ -266,6 +287,47 @@ aside {
 	margin: 1em;	
 }
 
+/*style for table element*/
+table {
+	border: 0.1em solid #000000;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+/*style specifiesborder and padding for th and td elements*/
+th, td {
+	border: 0.1em solid #000000;
+	paddign: 1em;
+}
+
+/*style for th element*/
+th {
+	background-color: #1D1D1C;
+	color: #FFFFFF;
+}
+
+/*style for caption element*/
+caption {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+
+/*style rule for label element*/
+label {
+	float: left;
+	padding-right: 0.5em;
+	text-align: right;
+	width: 10em;
+}
+
+/*style rule for btn class*/
+.btn {
+	margin-left: 12em;
+}
+
 }
 
 /* Media query for desktop layout targets screens with a minimum width of 830px. Inherits styles from mobile layout defined above. */
@@ -398,6 +460,28 @@ main h2 {
 /* Style for main article h2 element */
 main article h2 {
 	color: #000000;
+}
+
+/*style for table element*/
+table {
+	background-color: #FFFFFF;
+	width: 85%;
+}
+
+/*style for caption elemnet*/
+caption {
+	color: #FFFFFF;
+}
+
+/*style rule for form element*/
+form {
+	background-color: #FFFFFF;
+	padding: 1em;
+}
+
+/*style rule for paragraph with form element*/
+form p {
+	color:#000000;
 }
 
 }
