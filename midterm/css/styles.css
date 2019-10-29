@@ -1,7 +1,15 @@
 /* Stylesheet by Brendan McCourt */
 
 body {
-	background-color: #1D1D1C;
+	background-color: #111111;
+}
+
+main {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	display: block;
+	margin-top: 0.5em;
+	border-radius: 2em 0 2em 0;
+	padding: 1em;
 }
 
 img {
@@ -9,7 +17,14 @@ img {
 }
 
 header {
-	background-color: #1D1D1D;
+	background-color: #111111;
+	text-align: center;
+	margin: -0.8em;
+}
+
+header img {
+	height: 70px;
+	width: 70px;
 }
 
 nav {
@@ -27,6 +42,7 @@ nav ul {
 }
 
 nav li {
+	display: inline-block;
 	border-radius: 2em;
 	list-style-type: none;
 	margin: 0.2em;
@@ -36,6 +52,23 @@ nav li {
 nav li a {
 	color: #ffffff;
 	text-decoration: none;
+}
+
+nav li a:link{
+	color: #ffffff;
+}
+
+nav li a:visited {
+	color: #a9a9a9;
+}
+
+nav li a:hover{
+	color: #ff0000;
+}
+
+.hidden {
+	font-size: .5em;
+	color: gray;
 }
 
 .schedule {
@@ -48,14 +81,47 @@ nav li a {
 .schedule {
 	display: none;
 }
+.desktop {
+	display: none;
 }
 
 /* Tablet */
 @media only screen and (min-width: 640px) {
 
+article {
+	background-color: #1D1D1C;
+	float: left;
+	margin: 0.5%;
+	padding: 0.5%;
+	text-align: center;
+	width: 31%;
+}
+
+article img {
+	border: solid 0.1em #1D1D1C;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article p {
+	color: #ffffff;
+	margin-top: 2%;
+	padding: 1%;
+	text-align: center;
+}
+
+aside {
+	background-color: #2A2A2A;
+	border-radius: 5em 5em 5em 5em;
+	padding: 1.5em;
+	margin: 1em;
+}
+
 .schedule {
 	display: none;
 }
+.desktop {
+	display: inline;
 }
 
 /* Desktop */
