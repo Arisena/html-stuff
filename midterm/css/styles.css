@@ -1,13 +1,88 @@
 /* Stylesheet by Brendan McCourt */
 
+body {
+	background-color: #1D1D1C;
+}
+
+img {
+	max-width: 100%
+}
+
+header {
+	background-color: #1D1D1D;
+}
+
+nav {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	margin-top -1.5em
+}
+
+nav ul {
+	padding: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+nav li {
+	border-radius: 2em;
+	list-style-type: none;
+	margin: 0.2em;
+	padding: 0.2em;
+}
+
+nav li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.schedule {
+	display: none;
+}
+
 /* Phone */
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 480px) {
+
+.schedule {
+	display: none;
+}
 }
 
 /* Tablet */
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 640px) {
+
+.schedule {
+	display: none;
+}
 }
 
 /* Desktop */
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 840px) {
+
+table {
+	border: 0.2em solid #ffffff;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+th, td {
+	border: 0.1em solid #ffffff;
+	padding: 1em;
+}
+
+th {
+	background-color: #ff0d00;
+	color: #ffffff;
+}
+
+.schedule {
+	display: inline;
+}
+.mobile {
+	display: none;
+}
 }
