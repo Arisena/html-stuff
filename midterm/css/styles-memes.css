@@ -1,0 +1,32 @@
+/* Stylesheet by Brendan McCourt  */
+
+body {
+	background-color: #111111;
+}
+
+main {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	display: block;
+	margin-top: 0.5em;
+	border-radius: 2em 0 2em 0;
+	padding: 1em;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	background-color: #111111;
+	text-align: center;
+	margin: -0.8em
+}
+
+header img {
+	height: 100px;
+	width: 100px;
+}
+
+main img {
+	float: left;
+}
