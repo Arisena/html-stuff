@@ -30,3 +30,25 @@ header img {
 main img {
 	float: left;
 }
+
+.mobile {
+	display: inline;
+}
+.desktop {
+	display: none;
+}
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 640px) {
+}
+
+@media only screen and (min-width: 840px) {
+
+.mobile {
+	display: none;
+}
+.desktop {
+	display: inline;
+}
+}
