@@ -10,6 +10,11 @@ main {
 	margin-top: 0.5em;
 	border-radius: 2em 0 2em 0;
 	padding: 1em;
+	background-color: #111111;
+}
+
+footer {
+	background-color: #111111;
 }
 
 img {
@@ -37,6 +42,7 @@ main img {
 .desktop {
 	display: none;
 }
+
 @media only screen and (min-width: 480px) {
 }
 
