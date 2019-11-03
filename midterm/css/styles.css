@@ -61,6 +61,27 @@ nav li a:hover{
 	color: #ff0000;
 }
 
+input[type=text] {
+	width: 20%;
+	padding: 6px 10px;
+}
+input[type=submit] {
+	width: 5%;
+	padding: 3px 10px;
+}
+input[type=reset] {
+	width: 5%;
+	padding: 3px 10px;
+}
+
+select {
+	padding: 3px 10px;
+}
+
+textarea {
+	width: 20%;
+}
+
 .hidden {
 	font-size: .5em;
 	color: gray;
