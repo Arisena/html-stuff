@@ -69,14 +69,7 @@ input[type=text] {
 	width: 20%;
 	padding: 6px 10px;
 }
-input[type=submit] {
-	width: 5%;
-	padding: 3px 10px;
-}
-input[type=reset] {
-	width: 5%;
-	padding: 3px 10px;
-}
+
 
 select {
 	padding: 3px 10px;
@@ -121,7 +114,16 @@ textarea {
 
 /* Phone */
 @media only screen and (min-width: 480px) {
-
+input[type=submit] {
+	display: flex;
+	width: 30%;
+	padding: 3px 10px;
+}
+input[type=reset] {
+	display: flex;
+	width: 30%;
+	padding: 3px 10px;
+}
 .schedule {
 	display: none;
 }
@@ -190,6 +192,14 @@ th, td {
 th {
 	background-color: #ff0d00;
 	color: #ffffff;
+}
+input[type=submit] {
+	width: 10%;
+	padding: 3px 10px;
+}
+input[type=reset] {
+	width: 10%;
+	padding: 3px 10px;
 }
 
 .schedule {
