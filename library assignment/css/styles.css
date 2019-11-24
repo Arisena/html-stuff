@@ -1,0 +1,261 @@
+/* Stylesheet by Brendan McCourt */
+
+body {
+	background-color: #111111;
+}
+
+main {
+	color: white;
+}
+
+img {
+	max-width: 100%
+}
+
+header {
+	background-color: #111111;
+	text-align: center;
+	margin: -0.8em;
+}
+
+header img {
+	height: 70px;
+	width: 70px;
+}
+
+nav {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	margin-top -1.5em
+}
+
+nav ul {
+	padding: 2px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 3px solid grey;
+	border-radius: 25px;
+	width: 200px;
+	display: inline;
+}
+
+nav li {
+	display: inline-block;
+	border-radius: 2em;
+	list-style-type: none;
+	margin: 0.2em;
+	padding: 0.2em;
+}
+
+nav li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav li a:link{
+	color: #ffffff;
+}
+
+nav li a:visited {
+	color: #a9a9a9;
+}
+
+nav li a:hover{
+	color: #ff0000;
+}
+
+input[type=text] {
+	width: 20%;
+	padding: 6px 10px;
+}
+
+
+select {
+	padding: 3px 10px;
+}
+
+textarea {
+	width: 30%;
+	height: 10em;
+}
+
+div.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+	color: white;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.hidden {
+	font-size: .5em;
+	color: gray;
+}
+
+.desktop {
+	display: none;
+}
+
+/* Phone */
+@media only screen and (min-width: 480px) {
+input[type=submit] {
+	display: flex;
+	width: 30%;
+	padding: 3px 10px;
+}
+input[type=reset] {
+	display: flex;
+	width: 30%;
+	padding: 3px 10px;
+}
+.schedule {
+	display: none;
+}
+.desktop {
+	display: none;
+}
+
+/* Tablet */
+@media only screen and (min-width: 640px) {
+
+article {
+	background-color: #1D1D1C;
+	text-align: center;
+	width: 100%;
+	border-radius: 3em 3em 3em 3em;
+}
+
+article img {
+	border: solid 0.1em #1D1D1C;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article p {
+	color: #ffffff;
+	margin-top: 2%;
+	padding: 1%;
+	text-align: center;
+}
+
+aside {
+	background-color: #2A2A2A;
+	border-radius: 5em 5em 5em 5em;
+	padding: 1.5em;
+	margin: 1em;
+}
+
+.schedule {
+	display: none;
+}
+.desktop {
+	display: inline;
+}
+
+/* Desktop */
+@media only screen and (min-width: 840px) {
+
+table {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+tr {
+	text-align: center;
+}
+
+th, td {
+	border: 3px solid grey;
+	padding: 1em;
+}
+
+th {
+	background-color: #ff0d00;
+	color: #ffffff;
+}
+input[type=submit] {
+	width: 10%;
+	padding: 3px 10px;
+}
+input[type=reset] {
+	width: 10%;
+	padding: 3px 10px;
+}
+
+.schedule {
+	display: inline;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
+}
+.mobile {
+	display: none;
+}
+}

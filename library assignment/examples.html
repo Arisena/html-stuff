@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Brendan McCourt -->
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/styles.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Main</a></li>
+			<li><a href="examples.html">Examples</a></li>
+			<li><a href="credit.html">Credits</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h1>Examples</h1><br>
+		<article>
+			<p>As you can see this is a basic gallery, however there are other ways to use an image gallery</p>
+		</article>
+		<div class="gallery" style="width:23%;">
+			<a href="images/watermark.jpg"><img src="images/watermark.jpg" alt="example" style="height:200px;"></a>
+ 		<div class="desc">First image</div>
+		</div>
+		<div class="gallery" style="width:23%;">
+			<a href="images/watermark2.jpg"><img src="images/watermark2.jpg" alt="example" style="height:200px;"></a>
+			<div class="desc">Thing with watermarks</div>
+		</div>
+		<div class="gallery" style="width:23%;">
+			<a href="images/watermark3.jpg"><img src="images/watermark3.jpg" alt="example" style="height:200px;"></a>
+ 		<div class="desc">#9</div>
+		</div>
+		<div class="gallery" style="width:23%;">
+			<a href="images/watermark4.jpg"><img src="images/watermark4.jpg" alt="example" style="height:200px;"></a>
+ 		<div class="desc">meme about stock photos</div>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<article>
+			<p>For example you can make a tabbed image gallery like this</p>
+		</article>
+		<div class="row" style="width:100%;">
+			<div class="column" style="width:31%;">
+				<img src="images/nature.jpg" alt="Railroad track in a forest" onclick="myFunction(this);">
+		  	</div>
+			<div class="column" style="width:31%;">
+				<img src="images/snow.jpg" alt="Closeup of snow" onclick="myFunction(this);">
+		  	</div>
+		  	<div class="column" style="width:31%;">
+				<img src="images/mountain.jpeg" alt="Some mountains" onclick="myFunction(this);">
+			</div>
+		</div>
+
+		<div class="container">
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+		  <img id="expandedImg" style="width:75%;">
+
+		  <div id="imgtext"></div>
+		</div> 
+
+		<script>
+			function myFunction(imgs) {
+			var expandImg = document.getElementById("expandedImg");
+			var imgText = document.getElementById("imgtext");
+			expandImg.src = imgs.src;
+			imgText.innerHTML = imgs.alt;
+			expandImg.parentElement.style.display = "block";
+			} 
+		</script>
+
+		<article>
+			<p>This will move when an image is expanded</p>
+		</article>
+	</main>
+</body>
+</html>
