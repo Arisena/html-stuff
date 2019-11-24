@@ -5,6 +5,7 @@ body {
 }
 
 main {
+	color: white;
 }
 
 img {
@@ -80,36 +81,35 @@ textarea {
 	height: 10em;
 }
 
+div.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 180px;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+	color: white;
+}
+
 .hidden {
 	font-size: .5em;
 	color: gray;
 }
 
-.schedule {
-	display: none;
-}
-
 .desktop {
 	display: none;
-}
-
-.center {
-	margin: auto;
-	width: 50%;
-	border: 3px solid grey;
-	padding: 10px;
-}
-.right {
-	float: right;
-}
-.left {
-	float: left;
-}
-
-.form { 
-	border: 5px solid grey;
-	border-radius: 3em 3em 3em 3em;
-	padding: 20px;
 }
 
 /* Phone */
@@ -136,10 +136,8 @@ input[type=reset] {
 
 article {
 	background-color: #1D1D1C;
-	margin: 0.5%;
-	padding: 0.5%;
 	text-align: center;
-	width: 31%;
+	width: 100%;
 	border-radius: 3em 3em 3em 3em;
 }
 
