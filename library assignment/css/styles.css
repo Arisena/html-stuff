@@ -8,6 +8,10 @@ main {
 	color: white;
 }
 
+code {
+	text-align: left;
+}
+
 img {
 	max-width: 100%
 }
@@ -179,6 +183,11 @@ input[type=reset] {
 }
 .desktop {
 	display: none;
+}
+
+.left {
+	text-align: left;
+	border-radius: 0em 0em 0em 0em;
 }
 
 /* Tablet */

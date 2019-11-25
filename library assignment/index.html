@@ -43,6 +43,26 @@
 			<p>As you can see in the above examples an image gallery is exacly what it sounds like, they can each be different sized or you can force them all to be the same size, generally you would want to keep them all the same size both in image actual size and how they are on the website so that you don't get images that look bad due to being shrunk or stretched while others look fine. <br><br>
 			Image galleries usually don't display them all at once, usually the description is kept hidden until you click on the image and it gets expanded.</p>
 		</article>
+		<article class="left">
+			<code>
+				&lt;div class="gallery"&gt;
+				<br>
+					&emsp;&lt;a href=&quot;Path/To/Image&quot;&gt;&lt;img src=&quot;Path/To/Image&quot; alt=&quot;example&quot; style=&quot;height:200px;&quot;&gt;&lt;/a&gt;
+					<br>
+ 					&emsp;&lt;div class=&quot;desc&quot;&gt;Description of the above image&lt;/div&gt;
+					<br>
+				&lt;/div&gt;
+				<br>
+				div.gallery {margin: 5px;border: 1px solid #ccc;float: left;width: 180px;}
+				<br>
+				div.gallery:hover {border: 1px solid #777;}
+				<br>
+				div.gallery img {width: 100%;height: auto;}
+				<br>
+				div.desc {padding: 15px;text-align: center;}
+				<br>
+			</code>
+		</article>
 	</main>
 </body>
 </html>
